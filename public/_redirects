@@ -1,0 +1,6 @@
+# SPA routing
+/*  /index.html  200
+
+# Ensure static asset requests are served as-is (don’t rewrite to index.html)
+/assets/*  /assets/:splat  200
+
