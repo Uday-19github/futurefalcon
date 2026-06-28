@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { GraduationCap, Building2, Microscope, Wrench, Award, Users } from "lucide-react";
+import { GraduationCap, Building2, Microscope, Wrench, Award, Users, Map } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -8,7 +8,7 @@ import studentsWorkshop from "@/assets/students-workshop.jpg";
 import falconMist from "@/assets/falcon-mist.jpg";
 import droneHero from "@/assets/drone-hero.jpg";
 import sspdrone from "@/assets/sspdrone.jpg";
-import ssvdrone from "@/assets/ssvdrone.jpg";
+import surveyMappingHome from "@/assets/surv11.jpg";
 import ffdrone from "@/assets/ffdrone.jpg";
 import don from "@/assets/don.jpg";
 import seed from "@/assets/seed.jpg";
@@ -19,6 +19,45 @@ const DualTracks = () => {
   const navigate = useNavigate();
 
   const cards = [
+    {
+      icon: Building2,
+      title: "Falcon X Security and Surveillance Drone",
+      titleNode: (
+        <>
+          Falcon <span className="text-red-500">X</span> Security and Surveillance Drone
+        </>
+      ),
+      image: don,
+      description:
+        "Advanced UAVs designed for tactical, civil, and industrial missions, ensuring superior visibility, reliability, and rapid field deployment.",
+      features: [
+        "EO–IR Gimbals & Thermal Vision",
+        "Floodlights & Loudspeakers Control",
+        "Disaster Response & Urban Monitoring",
+        "Pipeline & Power Line Inspection",
+        "Autonomous Patrol & Route Planning",
+        "AI-Assisted Threat Detection & Analysis",
+      ],
+      variant: "secondary" as const,
+      route: "/surveillance-security-drones",
+    },
+    {
+      icon: Map,
+      title: "Survey & Mapping Drones",
+      image: surveyMappingHome,
+      description:
+        "High-accuracy UAV mapping systems for surveying, infrastructure planning, mining, agriculture, forestry, and environmental monitoring.",
+      features: [
+        "RTK/PPK Centimeter-Level Accuracy",
+        "RGB, LiDAR, Thermal & Multispectral Payloads",
+        "Orthomosaics, DEM, DSM & Point Clouds",
+        "GIS & CAD Compatible Deliverables",
+        "Automated Flight Planning",
+        "Volume Calculations & Digital Twins",
+      ],
+      variant: "secondary" as const,
+      route: "/survey-mapping-drones",
+    },
     {
       icon: GraduationCap,
       title: "Seed Ball Dispersal Drones",
@@ -33,23 +72,6 @@ const DualTracks = () => {
       ],
       variant: "default" as const,
       route: "/seed-balls-dispersal-drones",
-    },
-    {
-      icon: Building2,
-      title: "Surveillance & Security Drones",
-      image: don,
-      description:
-        "Advanced UAVs designed for tactical, civil, and industrial missions, ensuring superior visibility, reliability, and rapid field deployment.",
-      features: [
-        "EO–IR Gimbals & Thermal Vision",
-        "Floodlights & Loudspeakers Control",
-        "Disaster Response & Urban Monitoring",
-        "Pipeline & Power Line Inspection",
-        "Autonomous Patrol & Route Planning",
-        "AI-Assisted Threat Detection & Analysis",
-      ],
-      variant: "secondary" as const,
-      route: "/surveillance-security-drones",
     },
     {
       icon: Microscope,
@@ -158,7 +180,7 @@ const DualTracks = () => {
                   <div className="bg-yellow-500 p-2 rounded-lg">
                     <card.icon className="w-5 h-5 text-black" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-white">{card.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-white">{card.titleNode ?? card.title}</h3>
                 </div>
               </div>
               <div className="p-6 flex flex-col flex-grow">

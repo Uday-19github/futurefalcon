@@ -24,13 +24,14 @@ const SeedBallsDispersalDrones = () => {
 
   const productOptions = [
     'Seed Ball Dispersal Drones',
-    'Surveillance & Security Drones',
+    'Falcon X security and surveillance drone',
+    'Survey & Mapping Drones',
     'Firefighter\'s Falcon Fly',
     'Falcon Mist Wash Drones',
     'Custom Drone Services'
   ];
 
-  const serviceOptions = ['Educational Institutions Service', 'Seed Ball Dispersal Drone Service', 'Surveillance & Security Drone Service', 'Firefighter\'s Falcon Fly Service', 'Falcon Mist Wash Drone Service', 'Custom Drone Service'];
+  const serviceOptions = ['Educational Institutions Service', 'Seed Ball Dispersal Drone Service', 'Surveillance & Security Drone Service', 'Survey & Mapping Drones Service', 'Firefighter\'s Falcon Fly Service', 'Falcon Mist Wash Drone Service', 'Custom Drone Service'];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

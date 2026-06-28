@@ -12,6 +12,7 @@ import FirefightersFalconFly from "./pages/FirefightersFalconFly";
 import FalconMistWashDrones from "./pages/FalconMistWashDrones";
 import DroneWorkshopOfferings from "./pages/DroneWorkshopOfferings";
 import CustomDroneServices from "./pages/CustomDroneServices";
+import SurveyMappingDrones from "./pages/SurveyMappingDrones";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/seed-balls-dispersal-drones" element={<SeedBallsDispersalDrones />} />
           <Route path="/surveillance-security-drones" element={<SurveillanceSecurityDrones />} />
           <Route path="/firefighters-falcon-fly" element={<FirefightersFalconFly />} />
+          <Route path="/survey-mapping-drones" element={<SurveyMappingDrones />} />
           <Route path="/falcon-mist-wash-drones" element={<FalconMistWashDrones />} />
           <Route path="/drone-workshop-offerings" element={<DroneWorkshopOfferings />} />
           <Route path="/custom-drone-services" element={<CustomDroneServices />} />

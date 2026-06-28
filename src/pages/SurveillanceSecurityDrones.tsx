@@ -3,8 +3,10 @@ import { Card } from "@/components/ui/card";
 import { Building2, ArrowLeft, Shield, Eye, Radio, Zap, Award, MapPin, Mail, Phone, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// 🖼️ Replace with your own 3 images
-import heroImage from "@/assets/vs.png";
+// 🖼️ Replace with your own images/video
+import falconXVideo from "@/assets/newfal.mp4";
+import falconXImageOne from "@/assets/x1.JPG";
+import falconXImageTwo from "@/assets/x2.JPG";
 import missionImage from "@/assets/v2.png";
 import inspectionImage from "@/assets/v3.png";
 
@@ -24,13 +26,14 @@ const SurveillanceSecurityDrones = () => {
 
   const productOptions = [
     'Seed Ball Dispersal Drones',
-    'Surveillance & Security Drones',
+    'Falcon X security and surveillance drone',
+    'Survey & Mapping Drones',
     'Firefighter\'s Falcon Fly',
     'Falcon Mist Wash Drones',
     'Custom Drone Services'
   ];
 
-  const serviceOptions = ['Educational Institutions Service', 'Seed Ball Dispersal Drone Service', 'Surveillance & Security Drone Service', 'Firefighter\'s Falcon Fly Service', 'Falcon Mist Wash Drone Service', 'Custom Drone Service'];
+  const serviceOptions = ['Educational Institutions Service', 'Seed Ball Dispersal Drone Service', 'Surveillance & Security Drone Service', 'Survey & Mapping Drones Service', 'Firefighter\'s Falcon Fly Service', 'Falcon Mist Wash Drone Service', 'Custom Drone Service'];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -108,7 +111,7 @@ const SurveillanceSecurityDrones = () => {
               <Building2 className="w-16 h-16 text-primary relative z-10" style={{animation: 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'}} />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-              Surveillance & Security Drones
+              Falcon <span className="text-red-500 bg-none bg-clip-border">X</span> security and surveillance drone
             </h1>
             <p className="max-w-3xl text-lg md:text-xl text-gray-400 leading-relaxed">
               Reliable eyes and voice for tactical, industrial, and defense
@@ -117,10 +120,15 @@ const SurveillanceSecurityDrones = () => {
             </p>
             <div className="relative w-full max-w-5xl group mt-4">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/80 to-primary/60 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-              <img
-                src={heroImage}
-                alt="Surveillance drone in action"
+              <video
+                src={falconXVideo}
                 className="relative rounded-2xl shadow-2xl w-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+                aria-label="Falcon X security and surveillance drone video"
               />
             </div>
           </div>
@@ -148,6 +156,24 @@ const SurveillanceSecurityDrones = () => {
             </p>
           </div>
         </Card>
+
+        {/* ================= FALCON X SHOWCASE ================= */}
+        <section className={`grid md:grid-cols-2 gap-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{transitionDelay: '250ms'}}>
+          {[
+            { image: falconXImageOne, alt: "Falcon X security drone front view" },
+            { image: falconXImageTwo, alt: "Falcon X security drone field operation" }
+          ].map((item, i) => (
+            <div key={item.alt} className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+              <img
+                src={item.image}
+                alt={item.alt}
+                loading="lazy"
+                className="relative h-full min-h-[280px] w-full rounded-2xl shadow-2xl object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
+              />
+            </div>
+          ))}
+        </section>
 
         {/* ================= KEY FEATURES ================= */}
         <Card className={`p-10 hover:shadow-2xl transition-all duration-500 border-2 border-yellow-500/50 bg-[#1a1a1a] ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`} style={{transitionDelay: '300ms'}}>
