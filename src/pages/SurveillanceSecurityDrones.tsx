@@ -120,7 +120,7 @@ const SurveillanceSecurityDrones = () => {
             <div className="relative w-full max-w-5xl group mt-4">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/80 to-primary/60 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <iframe
-                src="https://www.youtube.com/embed/DVVGfyv8XEU"
+                src="https://www.youtube-nocookie.com/embed/DVVGfyv8XEU?controls=0&rel=0&modestbranding=1&playsinline=1"
                 title="Falcon X security and surveillance drone video"
                 className="relative aspect-video rounded-2xl shadow-2xl w-full transform group-hover:scale-[1.02] transition-transform duration-500"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
