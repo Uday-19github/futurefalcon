@@ -4,7 +4,6 @@ import { Building2, ArrowLeft, Shield, Eye, Radio, Zap, Award, MapPin, Mail, Pho
 import { Button } from "@/components/ui/button";
 
 // 🖼️ Replace with your own images/video
-import falconXVideo from "@/assets/newfal.mp4";
 import falconXImageOne from "@/assets/x1.JPG";
 import falconXImageTwo from "@/assets/x2.JPG";
 import missionImage from "@/assets/v2.png";
@@ -120,15 +119,12 @@ const SurveillanceSecurityDrones = () => {
             </p>
             <div className="relative w-full max-w-5xl group mt-4">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/80 to-primary/60 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-              <video
-                src={falconXVideo}
-                className="relative rounded-2xl shadow-2xl w-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
-                autoPlay
-                muted
-                loop
-                playsInline
-                controls
-                aria-label="Falcon X security and surveillance drone video"
+              <iframe
+                src="https://www.youtube.com/embed/DVVGfyv8XEU"
+                title="Falcon X security and surveillance drone video"
+                className="relative aspect-video rounded-2xl shadow-2xl w-full transform group-hover:scale-[1.02] transition-transform duration-500"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               />
             </div>
           </div>
