@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import surveyHero from "@/assets/su1.jpeg";
 import miningImage from "@/assets/su1.jpeg";
-import urbanImage from "@/assets/su3.jpeg";
-import lidarImage from "@/assets/su3.gif";
+import urbanImage from "@/assets/ub1.jpg";
+import lidarImage from "@/assets/ub2.jpg";
 
 const productOptions = [
   "Seed Ball Dispersal Drones",
   "Falcon X security and surveillance drone",
-  "Survey & Mapping Drones",
+  "Drone Survey and Mapping",
   "Firefighter's Falcon Fly",
   "Falcon Mist Wash Drones",
   "Custom Drone Services",
@@ -20,7 +20,7 @@ const serviceOptions = [
   "Educational Institutions Service",
   "Seed Ball Dispersal Drone Service",
   "Surveillance & Security Drone Service",
-  "Survey & Mapping Drones Service",
+  "Drone Survey and Mapping Service",
   "Firefighter's Falcon Fly Service",
   "Falcon Mist Wash Drone Service",
   "Custom Drone Service",
@@ -256,7 +256,7 @@ const SurveyMappingDrones = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold text-white bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-              Drone Survey & Mapping Solutions
+              Drone Survey and Mapping
             </h1>
             <p className="max-w-4xl text-lg md:text-xl text-gray-400 leading-relaxed">
               Fast, accurate, and cost-effective geospatial intelligence for government agencies, infrastructure developers, mining companies, utility providers, and urban planners.
@@ -280,7 +280,7 @@ const SurveyMappingDrones = () => {
           </div>
           <div className="space-y-4">
             <p className="text-gray-400 text-base md:text-lg leading-relaxed">
-              Future Falcon&apos;s Survey & Mapping Drones provide fast, accurate, and cost-effective geospatial intelligence for government agencies, infrastructure developers, mining companies, utility providers, and urban planners. Powered by RTK/PPK GNSS, LiDAR, RGB, Thermal, and Multispectral sensors, our UAV solutions capture high-resolution aerial data with centimeter-level accuracy.
+              Future Falcon&apos;s Drone Survey and Mapping solutions provide fast, accurate, and cost-effective geospatial intelligence for government agencies, infrastructure developers, mining companies, utility providers, and urban planners. Powered by RTK/PPK GNSS, LiDAR, RGB, Thermal, and Multispectral sensors, our UAV solutions capture high-resolution aerial data with centimeter-level accuracy.
             </p>
             <p className="text-gray-400 text-base md:text-lg leading-relaxed">
               From topographic surveys and land mapping to volumetric analysis and 3D terrain modeling, our drones significantly reduce project timelines while delivering GIS-ready datasets for planning, monitoring, and informed decision-making.

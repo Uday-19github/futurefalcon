@@ -26,13 +26,13 @@ const SurveillanceSecurityDrones = () => {
   const productOptions = [
     'Seed Ball Dispersal Drones',
     'Falcon X security and surveillance drone',
-    'Survey & Mapping Drones',
+    'Drone Survey and Mapping',
     'Firefighter\'s Falcon Fly',
     'Falcon Mist Wash Drones',
     'Custom Drone Services'
   ];
 
-  const serviceOptions = ['Educational Institutions Service', 'Seed Ball Dispersal Drone Service', 'Surveillance & Security Drone Service', 'Survey & Mapping Drones Service', 'Firefighter\'s Falcon Fly Service', 'Falcon Mist Wash Drone Service', 'Custom Drone Service'];
+  const serviceOptions = ['Educational Institutions Service', 'Seed Ball Dispersal Drone Service', 'Surveillance & Security Drone Service', 'Drone Survey and Mapping Service', 'Firefighter\'s Falcon Fly Service', 'Falcon Mist Wash Drone Service', 'Custom Drone Service'];
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -120,7 +120,7 @@ const SurveillanceSecurityDrones = () => {
             <div className="relative w-full max-w-5xl group mt-4">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/80 to-primary/60 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
               <iframe
-                src="https://www.youtube-nocookie.com/embed/DVVGfyv8XEU?controls=0&rel=0&modestbranding=1&playsinline=1"
+                src="https://www.youtube-nocookie.com/embed/DVVGfyv8XEU?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
                 title="Falcon X security and surveillance drone video"
                 className="relative aspect-video rounded-2xl shadow-2xl w-full transform group-hover:scale-[1.02] transition-transform duration-500"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

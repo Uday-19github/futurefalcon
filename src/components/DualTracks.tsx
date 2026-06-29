@@ -43,7 +43,7 @@ const DualTracks = () => {
     },
     {
       icon: Map,
-      title: "Survey & Mapping Drones",
+      title: "Drone Survey and Mapping",
       image: surveyMappingHome,
       description:
         "High-accuracy UAV mapping systems for surveying, infrastructure planning, mining, agriculture, forestry, and environmental monitoring.",
